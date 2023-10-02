@@ -23,14 +23,14 @@
                 </div>
                 <div class="menu">
                     <ul class="menu-list">
-                        <li><a href="#hebergements" class="active">Hébergement</a></li>
-                        <li><a href="#activites">Activités</a></li>
+                        <li class="itemHebergement"><a href="#hebergements" class="active">Hébergement</a></li>
+                        <li class="itemActivites"><a href="#activites" class="inactive">Activités</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
-            <article>
+            <article class="search-hebergement">
                 <h1 class="main-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="main-txt">En plein centre ville ou en pleine nature</p>
                 <form action="" class="search-form">
@@ -39,13 +39,16 @@
                     </div>
                     <input type="text" placeholder="Marseille, France" class="search-bar">
                     <button type="submit" class="search-btn">Rechercher</button>
+                    <button type="submit" class="search-btn-mobile hidden">
+                        <i class="fa-solid fa-magnifying-glass glass-icon" aria-hidden="true"></i>
+                    </button>
                 </form>
                 <div class="container-filter">
                     <h2 class="filter-title">Filtres</h2>
                     <ul class="filter-list">
                         <li class="filter"><i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Économique</li>
                         <li class="filter"><i class="fa-solid fa-person" aria-hidden="true"></i>Familial</li>
-                        <li class="filter"><i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</li>
+                        <li class="filter filter-active-mobile"><i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</li>
                         <li class="filter filter-souris filter-active">
                             <i class="fa-solid fa-fire" aria-hidden="true"></i>Nos pépites
                             <img src="./images/autres/souris.png" class="souris" alt="">
@@ -58,7 +61,7 @@
                 </div>
             </article>
             <section id="hebergements" class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements background-hebergement">
                     <div class="populaires-title">
                         <h2 class="section-title">Hébergement à Marseille</h2>
                     </div>
@@ -176,14 +179,14 @@
                                         <div class="card-txt">
                                             <h3 class="card-title">Hôtel Le Panier</h3>
                                             <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
-                                            <div class="card-rating">
-                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                                <span class="sr-only">Note de 4 sur 5</span>
-                                            </div>
+                                        </div>
+                                        <div class="card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                            <span class="sr-only">Note de 4 sur 5</span>
                                         </div>
                                     </div>
                                 </article>
